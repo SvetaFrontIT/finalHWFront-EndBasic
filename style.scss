@@ -1,0 +1,1006 @@
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("fonts/subset-ProximaNova-Bold.eot");
+  src: url("fonts/subset-ProximaNova-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/subset-ProximaNova-Bold.woff2") format("woff2"),
+    url("fonts/subset-ProximaNova-Bold.woff") format("woff"),
+    url("fonts/subset-ProximaNova-Bold.ttf") format("truetype"),
+    url("fonts/subset-ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("fonts/subset-ProximaNova-Light.eot");
+  src: url("fonts/subset-ProximaNova-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/subset-ProximaNova-Light.woff2") format("woff2"),
+    url("fonts/subset-ProximaNova-Light.woff") format("woff"),
+    url("fonts/subset-ProximaNova-Light.ttf") format("truetype"),
+    url("fonts/subset-ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("fonts/subset-ProximaNova-Semibold.eot");
+  src: url("fonts/subset-ProximaNova-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/subset-ProximaNova-Semibold.woff2") format("woff2"),
+    url("fonts/subset-ProximaNova-Semibold.woff") format("woff"),
+    url("fonts/subset-ProximaNova-Semibold.ttf") format("truetype"),
+    url("fonts/subset-ProximaNova-Semibold.svg#ProximaNova-Semibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("fonts/subset-ProximaNova-Regular.eot");
+  src: url("fonts/subset-ProximaNova-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/subset-ProximaNova-Regular.woff2") format("woff2"),
+    url("fonts/subset-ProximaNova-Regular.woff") format("woff"),
+    url("fonts/subset-ProximaNova-Regular.ttf") format("truetype"),
+    url("fonts/subset-ProximaNova-Regular.svg#ProximaNova-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  background-image: url(images/rectangle_1_386-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &-container {
+    max-width: 1562px;
+    margin: auto;
+    position: relative;
+    padding: 54px 20px 110px 20px;
+  }
+  &-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 307px;
+  }
+  &-logo-text {
+    font-family: "Proxima Nova Lt";
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  &-body {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &-string {
+    background-image: url(images/rectangle_1_kopiya_950-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 255px;
+    height: 320px;
+    position: absolute;
+    z-index: 3;
+    left: 392px;
+    top: -83px;
+  }
+  &-title {
+    color: #ffffff;
+    font-family: "Proxima Nova Rg";
+    font-size: 89px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+  }
+  &-title.up {
+    z-index: 10;
+  }
+  &-title.down {
+    max-width: 73%;
+    z-index: 2;
+    letter-spacing: 4.5px;
+    align-self: flex-end;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    width: 100%;
+    position: absolute;
+    top: 76%;
+    left: 0;
+  }
+  &-btn {
+    background-color: #5e42b0;
+    border-radius: 38px;
+    box-shadow: 0 16px 24px #0a0e34;
+    font-family: "Proxima Nova Lt";
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 311px;
+    height: 77px;
+    border: none;
+    text-align: left;
+    background-repeat: no-repeat;
+    padding-top: 3px;
+    cursor: pointer;
+  }
+  &-btn .bold {
+    font-weight: 600;
+  }
+  &-btn.apple {
+    background-image: url(images/icon___apple_963-min.png);
+    background-size: 33px 37px;
+    background-position: 40px 19px;
+    padding-left: 104px;
+  }
+  &-btn.google {
+    background-image: url(images/icon___google_play_964-min.png);
+    background-size: 36px 39px;
+    background-position: 65px 18px;
+    padding-left: 124px;
+    margin-left: 50px;
+  }
+  &-link {
+    font-family: "Proxima Nova Lt";
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #9071ea;
+  }
+  &-item {
+    width: 103px;
+    text-align: center;
+    margin-left: 46px;
+  }
+  &-navlist {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-bottom: 258px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    &-logo {
+      margin-bottom: 190px;
+    }
+    &-body {
+      margin-bottom: 180px;
+    }
+    &-title {
+      font-size: 64px;
+    }
+    &-title.down {
+      z-index: 10;
+      letter-spacing: 3.2px;
+    }
+    &-string {
+      width: 35%;
+      height: 317px;
+      left: 239px;
+      top: -44px;
+      background-size: contain;
+    }
+    &-navlist {
+      width: 100%;
+      justify-content: space-around;
+    }
+    &-item {
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 725px) {
+  .header {
+    &-btn {
+      border-radius: 24px;
+      width: 142px;
+      height: 40px;
+      font-size: 8px;
+      line-height: 12px;
+      letter-spacing: 0.05em;
+      padding-top: 3px;
+    }
+    &-btn.apple {
+      background-size: 16px 18px;
+      background-position: 20px 10px;
+      padding-left: 43px;
+    }
+    &-btn.google {
+      background-size: 16px 18px;
+      background-position: 29px 10px;
+      padding-left: 52px;
+      margin-left: 9px;
+    }
+  }
+}
+@media (max-width: 505px) {
+  .header {
+    &-container {
+      padding: 35px 10px 20px 10px;
+    }
+    &-logo-text {
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+    }
+    &-logo {
+      justify-content: center;
+      margin-bottom: 136px;
+    }
+    &-string {
+      width: 154px;
+      height: 246px;
+      top: -24px;
+      left: 23%;
+      right: 28%;
+    }
+    &-title {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    &-title.down {
+      letter-spacing: 1.6px;
+      margin-bottom: 115px;
+      max-width: 88%;
+      margin-top: 23px;
+    }
+    &-navlist {
+      justify-content: space-evenly;
+      margin-bottom: 0;
+    }
+    &-item {
+      width: 76px;
+    }
+  }
+}
+.main {
+  position: relative;
+  &-pink {
+    background-color: #f5f4f9;
+  }
+  &-purple {
+    background-color: #5e42b0;
+  }
+  &-title {
+    font-family: "Proxima Nova Rg";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    margin-top: 103px;
+  }
+  &-card-text {
+    font-family: "Proxima Nova Rg";
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+  &-card-title {
+    font-family: "Proxima Nova Rg";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #c1c1c1;
+  }
+  &-card-number {
+    display: flex;
+    margin-right: 10px;
+  }
+  &-number-value {
+    margin: auto;
+    font-family: "Proxima Nova Rg";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: #000000;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 5px;
+      border-radius: 2px;
+      border: none;
+      background-color: #5e42b0;
+      margin-top: 4.2px;
+    }
+    &.purple::after {
+      content: "";
+      display: block;
+      height: 5px;
+      border-radius: 2px;
+      border: none;
+      background-color: #efefef;
+    }
+    &.indigo {
+      color: #9173e6;
+    }
+    &.indigo::after {
+      content: "";
+      display: block;
+      height: 5px;
+      border-radius: 2px;
+      border: none;
+      background-color: #efefef;
+    }
+  }
+  &-card-container {
+    max-width: 1375px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &-card {
+    flex-basis: 50%;
+    width: 50%;
+    position: relative;
+  }
+  &-img {
+    position: absolute;
+    left: -758px;
+    top: 40px;
+    width: 765.6px;
+    height: 1045px;
+    background-image: url("images/4-layers-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-card-head01 {
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 26px;
+  }
+  &-card-head02 {
+    display: flex;
+    margin-top: 62px;
+    margin-bottom: 26px;
+  }
+  &-card-head03 {
+    display: flex;
+    margin-top: 89px;
+    margin-bottom: 26px;
+  }
+  &-card-text01 {
+    margin-bottom: 58px;
+  }
+  &-card-text02 {
+    margin-bottom: 58px;
+  }
+  &-card-text03 {
+    margin-bottom: 100px;
+    color: #ffffff;
+  }
+  &-players-pink {
+    background-color: #f5f5f7;
+  }
+  &-players-indigo {
+    background-color: #0a0e34;
+  }
+  &-container-players {
+    align-items: flex-start;
+  }
+  &-basket-img {
+    position: absolute;
+    left: 521px;
+    top: -690px;
+    width: 991px;
+    height: 815px;
+    background-image: url("images/6-layers-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-container-cards320 {
+    opacity: 0;
+    z-index: -2;
+    position: absolute;
+  }
+  &-photo-block {
+    display: flex;
+  }
+  &-photo {
+    background-image: url("images/shutterstock_229044115_1257-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 50%;
+    background-position: center;
+    &--second {
+      background-image: url("images/rectangle_3_kopiya_3_946-min.jpg");
+    }
+    &--third {
+      background-image: url("images/rectangle_3_kopiya_4_947-min.jpg");
+    }
+  }
+  &-img-card {
+    flex-basis: 50%;
+    max-width: 765px;
+    position: relative;
+    padding: 244px 25px 122px 127px;
+    &--reverse {
+      padding: 244px 96px 122px 0;
+    }
+  }
+  &-img-title {
+    color: #c1c1c1;
+    font-family: "Proxima Nova Rg";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 90px;
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin-bottom: 102px;
+  }
+  &-img-text {
+    font-family: "Proxima Nova Rg";
+    max-width: 322px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+    color: #000000;
+    min-height: 174px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #5e42b0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    &--second {
+      max-width: 400px;
+    }
+    &--third {
+      max-width: 510px;
+    }
+  }
+  &-num-block {
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    display: flex;
+    position: absolute;
+    top: 211px;
+    left: -84px;
+    &--reverse {
+      left: auto;
+      right: -84px;
+    }
+  }
+  &-num {
+    margin: auto;
+    color: #f5f6f7;
+    font-family: "Proxima Nova Rg";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #ffffff;
+      opacity: 0.3;
+      margin-top: 6px;
+    }
+  }
+  &-block--reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 1651px) {
+  .main {
+    &-players {
+      overflow: hidden;
+    }
+    &-athlets {
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width: 1529px) {
+  .main {
+    &-card-container {
+      max-width: 910px;
+    }
+    &-card {
+      flex-basis: 62%;
+      width: 62%;
+      position: relative;
+    }
+    &-card {
+      padding-left: 33px;
+      padding-right: 56px;
+    }
+    &-img {
+      max-width: 483px;
+      max-height: 917px;
+      background-size: contain;
+      left: -406px;
+      top: 80px;
+    }
+    &-title {
+      font-size: 63px;
+      margin-top: 70px;
+    }
+    &-card-text {
+      font-size: 16px;
+      line-height: 22.5px;
+      letter-spacing: 0.9px;
+    }
+    &-card-head {
+      margin-top: 38px;
+      margin-bottom: 26px;
+    }
+    &-card-head01 {
+      margin-top: 49px;
+      margin-bottom: 26px;
+    }
+    &-card-text {
+      min-height: 51px;
+      margin-bottom: 38px;
+      margin-right: 56px;
+      max-width: 422px;
+    }
+    &-basket-img {
+      left: 264px;
+      top: -495px;
+      width: 626px;
+      height: 752.4px;
+      background-size: contain;
+    }
+    &-card-title {
+      font-size: 26px;
+    }
+    &-number-value {
+      font-size: 13px;
+    }
+    &-photo {
+      height: 584px;
+    }
+    &-photo-block {
+      display: block;
+    }
+    &-img-card {
+      max-width: 100%;
+      padding: 73px 34px 63px 34px;
+    }
+    &-num-block {
+      top: -88px;
+      left: 33px;
+      width: 116px;
+      height: 116px;
+    }
+    &-img-text {
+      min-height: 0;
+      padding-bottom: 38px;
+      max-width: 100%;
+    }
+    &-img-title {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 505px) {
+  .main {
+    &-athlets {
+      display: none;
+    }
+    &-players {
+      display: none;
+    }
+    &-container-cards320 {
+      position: relative;
+      opacity: 1;
+      z-index: 1;
+    }
+    &-card320 {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f5f4f9;
+      padding: 0 19px 32px 19px;
+    }
+    &-card-head320 {
+      margin-top: 69px;
+      margin-bottom: 19px;
+    }
+    &-title320 {
+      font-family: "Proxima Nova Rg";
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: #e7e7e7;
+      margin-top: 25px;
+      margin-bottom: 245px;
+      margin-left: 23px;
+    }
+    &-athlets-img320 {
+      position: absolute;
+      background-image: url("images/4-layers-min.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 66%;
+      min-width: 210px;
+      min-height: 281px;
+      top: 80px;
+      left: 16%;
+      z-index: 100;
+    }
+    &-players320 {
+      position: relative;
+      width: 100%;
+    }
+    &-players-img320 {
+      position: absolute;
+      background-image: url("images/6-layers-min.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 94.4%;
+      min-width: 302px;
+      min-height: 248px;
+      top: 102px;
+      left: 1%;
+      z-index: 100;
+    }
+    &-card-text {
+      margin-top: 0;
+      font-size: 15px;
+      line-height: 18px;
+      display: block;
+      min-height: 300px;
+    }
+    &-img-title {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    &-photo {
+      height: 351px;
+    }
+    &-num-block {
+      width: 70px;
+      height: 70px;
+    }
+    &-num {
+      font-size: 14px;
+      line-height: 16px;
+      &::after {
+        margin-top: 3px;
+      }
+    }
+    &-img-card {
+      padding: 28px 19px 51px 19px;
+    }
+    &-img-text {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.8px;
+      padding-bottom: 20px;
+    }
+  }
+}
+.footer {
+  background-image: url("images/rectangle_3_kopiya_11_1025-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-body {
+    display: flex;
+    flex-direction: column;
+  }
+  &-text {
+    margin: auto;
+    position: relative;
+    display: flex;
+    padding-top: 229px;
+    padding-bottom: 151px;
+  }
+  &-buttons {
+    margin: auto;
+    padding-bottom: 197px;
+  }
+  &-titles {
+    margin-left: 36px;
+    z-index: 3;
+  }
+  &-body-title {
+    color: #ffffff;
+    font-family: "Proxima Nova Rg";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 90px;
+    text-transform: uppercase;
+    letter-spacing: 4.96px;
+  }
+  &-body-subtitle {
+    color: #a496ca;
+    font-family: "Proxima Nova Rg";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  &-body-img {
+    width: 130px;
+    height: 137px;
+    z-index: 3;
+  }
+  &-string {
+    position: absolute;
+  }
+  &-string-short {
+    width: 138px;
+    height: 157px;
+    top: 209px;
+    left: 188px;
+  }
+  &-string-long {
+    width: 275px;
+    height: 314px;
+    top: 137px;
+    left: 525px;
+  }
+  &-btn {
+    width: 311px;
+    height: 77px;
+    box-shadow: 0 16px 24px #0a0e34;
+    background-color: #5e42b0;
+    border: none;
+    border-radius: 36px;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: "Proxima Nova Lt";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-align: start;
+
+    &--apple {
+      background-image: url("images/icon___apple_963-min.png");
+      background-size: 33px 37px;
+      background-position: 61px 18px;
+      padding-left: 111px;
+    }
+    &--google {
+      background-image: url("images/icon___google_play_964-min.png");
+      background-size: 36px 39px;
+      background-position: 75px 19px;
+      padding-left: 130px;
+      margin-left: 50px;
+    }
+  }
+  &-bold {
+    font-family: "Proxima Nova Rg";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+  }
+  &-bottom {
+    background-color: rgba(10, 14, 52, 0.6);
+  }
+  &-container {
+    max-width: 1810px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &-link {
+    color: #ffffff;
+    font-family: "Proxima Nova Rg";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  &-navlist {
+    display: flex;
+  }
+  &-item {
+    margin-left: 8px;
+  }
+  &-icons {
+    width: 137px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 1529px) {
+  .footer {
+    &-text {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 128px;
+      padding-bottom: 198px;
+    }
+    &-string-short {
+      width: 138px;
+      height: 157px;
+      top: 331px;
+      left: 49px;
+    }
+    &-string-long {
+      width: 275px;
+      height: 314px;
+      top: 253px;
+      left: 336px;
+    }
+    &-body-link {
+      margin-bottom: 80px;
+    }
+    &-body-title {
+      color: #ffffff;
+      font-family: "Proxima Nova Rg";
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 60px;
+      text-transform: uppercase;
+      letter-spacing: 4.85px;
+    }
+    &-body-subtitle {
+      color: #a496ca;
+      font-family: "Proxima Nova Rg";
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+    &-logo {
+      display: none;
+    }
+    &-nav {
+      display: none;
+    }
+    &-container {
+      max-width: 100%;
+      justify-content: center;
+      padding-bottom: 36px;
+      padding-top: 36px;
+    }
+    &-btn--google {
+      margin-left: 30px;
+    }
+  }
+}
+@media (max-width: 731px) {
+  .footer {
+    &-body-img {
+      width: 73px;
+      height: 78px;
+    }
+    &-body-title {
+      color: #ffffff;
+      font-family: "Proxima Nova Rg";
+      font-size: 34px;
+      line-height: 34px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+    }
+    &-body-subtitle {
+      color: #9b8ec1;
+      font-family: "Proxima Nova Rg";
+      font-size: 15px;
+      line-height: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+    }
+    &-body-link {
+      margin-bottom: 57px;
+    }
+    &-string-short {
+      width: 58px;
+      height: 67px;
+      top: 226px;
+      left: 19px;
+    }
+    &-string-long {
+      width: 95px;
+      height: 121px;
+      top: 201px;
+      left: 147px;
+    }
+    &-text {
+      padding-top: 97px;
+      padding-bottom: 72px;
+    }
+    &-btn {
+      width: 142px;
+      height: 39px;
+      box-shadow: 0 10px 16px #0a0e34;
+      border-radius: 19.5px;
+      font-size: 8px;
+      line-height: 9px;
+
+      &--apple {
+        background-size: 15px 17px;
+        background-position: 20px 11px;
+        padding-left: 45px;
+      }
+
+      &--google {
+        background-size: 16px 18px;
+        background-position: 30px 10px;
+        padding-left: 54px;
+        margin-left: 8px;
+      }
+    }
+    &-bold {
+      font-size: 8px;
+      line-height: 9px;
+    }
+    &-titles {
+      margin-left: 0;
+    }
+    &-container {
+      padding-bottom: 15px;
+      padding-top: 20px;
+    }
+    &-fb {
+      width: 10px;
+      height: 18px;
+    }
+    &-twitter {
+      width: 18px;
+      height: 15px;
+    }
+    &-insta {
+      width: 17px;
+      height: 17px;
+    }
+    &-icons {
+      width: 124px;
+    }
+    &-buttons {
+      padding-bottom: 127px;
+    }
+  }
+}
